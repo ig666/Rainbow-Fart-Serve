@@ -32,7 +32,7 @@ function getHoneyedWords() {
 }
 
 //每天下午6点00分发送
-schedule.scheduleJob({ hour: 18, minute: 00 }, function () {
+schedule.scheduleJob({ hour: 18, minute: 30 }, function () {
   console.log("启动任务:" + new Date());
   getHoneyedWords().then((res) => {
     console.log(res.data);
